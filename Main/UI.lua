@@ -9,3 +9,7 @@ local tweenService = game:GetService("TweenService")
 local guiService = game:GetService("GuiService")
 local textService = game:GetService("TextService")
 return RoBounceUIVariablesTable
+
+--[[UI DEVELOPMENT WAS HALTED AS OF APR 7 2024 2:30AM GMT+0 BY OWNER.
+REASON: FOCUSING ON OTHER DEVELOPMENT.
+]]
