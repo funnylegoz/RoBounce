@@ -6,7 +6,7 @@ local RoBounceBuild = 0.1Development
 
 local Window = Fluent:CreateWindow({
     Title = "RoBounce:" .. RoBounceBuild,
-    SubTitle = "by dawid",
+    SubTitle = "By RoBounce Development",
     TabWidth = 160,
     Size = UDim2.fromOffset(580, 460),
     Acrylic = false,
