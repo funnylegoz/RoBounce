@@ -11,12 +11,13 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/
 lib:Notification("Notification", "Loaded Infinite Yield", ">>")
 end)
 
-tab:Button("Notification Test", function()
-lib:Notification("Notification", "NotificationText", ">>")
+tab:Button("OwlHub", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+lib:Notification("Notification", "Loaded OwlHub", ">>")
 end)
 
 tab:Bind("Bind",Enum.KeyCode.RightShift, function()
-print("RoBounce Keybind Press")
+print("funny hahas")
 end)
 
 tab2:Button("SafeSpeed", function()
