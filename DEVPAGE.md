@@ -4,7 +4,7 @@
 
 https://guns.lol/1200 -- Matwo's Bio
  
-https://is.gd/MsQSOI -- RoBounce Discord
+https://dsc.gg/robounce -- RoBounce Discord
 
 **Dai/ManHackWiz** FRIEND , UI DEV & BOT DEV
 
