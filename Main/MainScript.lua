@@ -1,32 +1,25 @@
-local lib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/Vape.txt")()
+local lib = loadstring(game:HttpGet"https://raw.githubusercontent.com/funnylegoz/RoBounce/main/Main/UILIBRARY.lua")()
 
-local win = lib:Window("PREVIEW",Color3.fromRGB(44, 120, 224), Enum.KeyCode.RightControl)
+local win = lib:Window("RoBounce Public Beta Testing 0.01b",Color3.fromRGB(44, 120, 224), Enum.KeyCode.RightControl)
 
-local tab = win:Tab("Main")
+local tab = win:Tab("Universal")
+
+local tab2 = win:Tab("Bedwars")
 
 tab:Button("InfYield", function()
-lib:Notification("Notification", "Hello!", "Hi!")
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+lib:Notification("Notification", "Loaded Infinite Yield", ">>")
 end)
 
-tab:Toggle("Toggle",false, function(t)
-print(t)
-end)
-
-tab:Slider("Slider",0,100,30, function(t)
-print(t)
-end)
-
-tab:Dropdown("Dropdown",{"Option 1","Option 2","Option 3","Option 4","Option 5"}, function(t)
-print(t)
-end)
-
-
-tab:Textbox("Textbox",true, function(t)
-print(t)
+tab:Button("Notification Test", function()
+lib:Notification("Notification", "NotificationText", ">>")
 end)
 
 tab:Bind("Bind",Enum.KeyCode.RightShift, function()
 print("RoBounce Keybind Press")
 end)
 
-tab:Label("Label")
+tab2:Button("SafeSpeed", function()
+game.Players.LocalPlayer.Character:WaitForChild("Humanoid").WalkSpeed = 23
+lib:Notification("Notification", "Applied SafeSpeed", ">>")
+end)
