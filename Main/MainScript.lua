@@ -20,8 +20,3 @@ tab2:Button("SafeSpeed", function()
 game.Players.LocalPlayer.Character:WaitForChild("Humanoid").WalkSpeed = 23
 lib:Notification("Notification", "Applied SafeSpeed", ">>")
 end)
-
-tab2:Button("Tracers", function()
-loadstring(game:HttpGet"https://raw.githubusercontent.com/funnylegoz/RoBounce/main/Main/Modules/TracersModule.lua")()
-lib:Notification("Notification", "Applied Tracers", ">>")
-end)
