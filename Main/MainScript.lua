@@ -16,10 +16,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/maste
 lib:Notification("Notification", "Loaded OwlHub", ">>")
 end)
 
-tab:Bind("Bind",Enum.KeyCode.RightShift, function()
-print("funny hahas")
-end)
-
 tab2:Button("SafeSpeed", function()
 game.Players.LocalPlayer.Character:WaitForChild("Humanoid").WalkSpeed = 23
 lib:Notification("Notification", "Applied SafeSpeed", ">>")
