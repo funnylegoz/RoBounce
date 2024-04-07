@@ -1,6 +1,7 @@
 local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/SaveManager.lua"))()
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
+local RoBounceModules = loadstring(game:HttpGet("https://raw.githubusercontent.com/funnylegoz/RoBounce/main/Main/RoBounceModulesLibrary.lua"))()
 local RoBounceBuild = 0.1Development
 
 local Window = Fluent:CreateWindow({
@@ -67,29 +68,10 @@ Fluent:Notify({
  local Toggle = Tabs.Main:AddToggle("Tracer Toggle", {Title = "Tracers", Default = false })
 
     Toggle:OnChanged(function()
-print("Ligmaballz")
+RoBounce.TracersModule()
     end)
 
     Options.MyToggle:SetValue(false)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 -- Addons
 SaveManager:SetLibrary(Fluent)
