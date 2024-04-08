@@ -27,4 +27,8 @@ end)
 TABNAME:Label('LABELTEXT')
 ```
 
-# Do whatever you please with this UI Lib.
+# Extras
+
+```lua
+    win:Exit() -- closes the lib.
+```
