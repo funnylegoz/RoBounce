@@ -9,28 +9,29 @@ local win = BlekLib:Create({
     }
 })
 
-local maintab = win:Tab('Aimbot')
-local uitab = win:Tab('UI')
+-- Tabs: 
 
-maintab:Toggle('Aimbot', function(v)
-    aimbot = v
+local maintab = win:Tab('Main')
+local plrtab = win:Tab('Local Player')
+
+-- Main Tab:
+
+maintab:Button('InfYield', function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 end)
 
-maintab:Slider('Hitchance', 30, 1, 100, function(v) -- default, 10 -- min, 300 -- max, function(a)
-    print(v)
+maintab:Button('CloseUI', function()
+win:Exit()
 end)
 
-maintab:Toggle('FOV Circle', function(v)
-    aimbot = v
-end)
+-- Local Player Tab:
 
-maintab:Slider('Radius', 90, 1, 360, function(v) -- default, 10 -- min, 300 -- max, function(a)
-    print(v)
-end)
+plrtab:Slider('Walkspeed', 30, 1, 100, function(ar)
+    
+local lplayer = game.Players.LocalPlayer
+    local character = player.Character or player.CharacterAdded:Wait()
+    local humanoid = character:WaitForChild("Humanoid")
+    
+humanoid.WalkSpeed = ar
 
-maintab:Label('Best aimbot on the market!')
-
-
-uitab:Button('Destroy GUI', function()
-    win:Exit()
-end)
+    end)
